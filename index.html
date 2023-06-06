@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./index.css" />
     <title>Todo List</title>
   </head>
   <body>
     <h1>Todo List</h1>
     <form>
-      <input type="text" placeholder="Enter a new task" />
-      <button type="button">Add</button>
+      <input type="text" id="todoInput" placeholder="Enter a new task" />
+      <button type="button" onclick="addTodo()">Add</button>
     </form>
-    <ul>
-      <li>Research project topic</li>
-      <li>Complete programming assignment</li>
-      <li>Work on personal coding project</li>
-      <li>Study for Board Exam</li>
-      <li>Preperation for interview</li>
-      <li>Attend and schedule meetings</li>
-      <li>Prepare for Future</li>
-    </ul>
+    <div>
+      <ul id="todoList">
+        <li>Research project topic</li>
+        <li>Complete programming assignment</li>
+        <li>Work on personal coding project</li>
+        <li>Study for Board Exam</li>
+        <li>Preperation for interview</li>
+        <li>Attend and schedule meetings</li>
+        <li>Prepare for Future</li>
+      </ul>
+    </div>
   </body>
 </html>
