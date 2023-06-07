@@ -8,3 +8,9 @@ function addTodo() {
     todoInput.value = "";
   }
 }
+
+function deleteTask(taskItem) {
+  var listItem = taskItem.parentNode;
+  var todoList = listItem.parentNode;
+  todoList.removeChild(listItem);
+}
