@@ -3,7 +3,9 @@ function addTodo() {
   var task = todoInput.value.trim();
   if (task !== "") {
     var listItem = document.createElement("li");
-    listItem.innerHTML = task;
+    listItem.innerHTML =
+      task +
+      '<button type="button" class="deleteOption" onclick="deleteTask(this)">Delete </button>';
     document.getElementById("todoList").appendChild(listItem);
     todoInput.value = "";
   }
